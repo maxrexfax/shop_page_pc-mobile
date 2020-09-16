@@ -39,7 +39,9 @@
     margin-bottom: 3px;
 }
 
-
+.buttons{
+	margin-bottom:5px;
+}
 
 #back_shadow {
     position: absolute;
