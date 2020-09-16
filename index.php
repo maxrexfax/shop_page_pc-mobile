@@ -54,7 +54,7 @@
            echo '<img src="img/img0'.$i.'.jpg" class="goods_img"/><br>';
            echo '<h4 class="goods_h4">Молодильное яблочко</h4><br>';
            echo '<p class="goods_p">Яблочко насыщенное поли&shy;ненасыщен&shy;ными угле&shy;водородами нейт&shy;ральной химичес&shy;кой реации улучшают цвет волос.</p><br><br>
-           <button id="'.$i.'" class="btn btn-danger" onclick="clickAction(this.id)">Подробнее</button>
+           <button id="'.$i.'" class="btn btn-danger buttons" onclick="clickAction(this.id)">Подробнее</button>
            </div>';
         }
      ?>
