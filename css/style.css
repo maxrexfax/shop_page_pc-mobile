@@ -21,11 +21,6 @@
     margin: 10px;
 }
 
-#popup-div{
-    background-color: #c4e3f3;
-
-}
-
 .whiteback{
     background-color: white;
 }
@@ -57,14 +52,23 @@
 
 .div_popup {
     position: fixed;
-    max-width: 300px;
     width: 100%;
     max-height: 90vh;
     z-index: 15;
     top: 50%;
     left: 50%;
-    background: rgb(208, 222, 223);
+    background-color: #c4e3f3;
     padding: 2px 10px;
     display: none;
     transform: translate(-50%, -50%);
+}
+
+
+#popup-div{
+    background-color: #c4e3f3;
+
+}
+
+.class-border{
+    border: 1px solid black;
 }
