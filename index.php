@@ -13,12 +13,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Document</title>
-    <script src="js/javascr.js"></script>	
-		<link href="css/style.css" rel="stylesheet">
+    <script src="js/javascr.js"></script>
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 </head>
 <body style="background-image: url(img/background.png); background-repeat: repeat;">
+<div class="row">
+    <nav class="col-sm-12 col-md-12 col-lg-12 head">
+        <?php
+        include_once('../menu/menu.php');
+        ?>
+    </nav>
+</div>
 <div id="back_shadow"></div>
   <section id="header_pc" class="d-none d-sm-block">
     <img src="img/header.jpg" style="width: 100%;"/>
@@ -33,7 +50,7 @@
 <hr/>
 <div class="div_popup" id="popup" onclick="resetPopup()">
     <div class="row justify-content-md-center">
-        <div class="col-11 col-md-3 local" id="popup-div" onclick="resetPopup()">
+        <div class="col-12 col-sm-5 col-md-5 col-lg-4 local" id="popup-div" onclick="resetPopup()">
             <img src="img/img01.jpg" style="width: 180px; height: 110px;" class="goods_img"/><br>
             <h4 class="goods_h4">Пробный заголовок</h4>
             <br>
@@ -50,7 +67,7 @@
       <p><a name="first"></a></p>
      <?php
         for($i = 1; $i < 9; $i++){
-           echo '<div class="col-11 col-md-3 local" id="'.$i.'">';
+           echo '<div class="col-12 col-sm-5 col-md-5 col-lg-4" id="'.$i.'">';
            echo '<img src="img/img0'.$i.'.jpg" class="goods_img"/><br>';
            echo '<h4 class="goods_h4">Молодильное яблочко</h4><br>';
            echo '<p class="goods_p">Яблочко насыщенное поли&shy;ненасыщен&shy;ными угле&shy;водородами нейт&shy;ральной химичес&shy;кой реации улучшают цвет волос.</p><br><br>
